@@ -1,0 +1,302 @@
+/* styles.css */
+
+body, p {
+    margin: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-image: url('hero-background.jpg'); /* Replace with your hero background image */
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1.2em;
+    text-decoration: none;
+    background-color: #1e90ff; /* Change to your preferred button color */
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0066cc; /* Change to a darker shade for hover effect */
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: border-bottom 0.3s ease;
+}
+
+nav a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.services, .service {
+    text-align: center;
+    padding: 40px;
+}
+
+.service {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service h3 {
+    color: #1e90ff;
+}
+
+.service p {
+    color: #555;
+}
+
+/* Add these styles for the 3x2 grid layout */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+/* Adjust the service styles for the grid */
+.service {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Add media query for responsiveness */
+@media screen and (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.contact {
+    margin-bottom: 20px;
+}
+
+
+.team, .member, .member img {
+    text-align: center;
+    padding: 40px;
+}
+
+.member {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.member:hover {
+    transform: scale(1.05);
+}
+
+.member img {
+    border-radius: 50%;
+    max-width: 100px;
+    margin-right: 20px;
+}
+
+.member-info {
+    flex: 1;
+}
+
+.company-story {
+    text-align: center;
+    padding: 40px;
+    background-color: #f4f4f4; /* Light background color */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin: 20px; /* Added margin for separation from other sections */
+}
+
+.vision-mission {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.vision, .mission {
+    flex: 1;
+}
+
+.story-text {
+    font-size: 1.3em;
+    color: #333; /* Dark text color */
+    line-height: 1.6;
+    margin-bottom: 20px; /* Adjusted margin for better spacing */
+}
+
+.vision-mission {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding-top: 20px; /* Added padding for separation from the text */
+    border-top: 1px solid #ddd; /* Border between text and vision-mission */
+}
+
+.vision, .mission {
+    flex: 1;
+    text-align: left; /* Align text to the left */
+    padding: 0 20px; /* Added padding for better spacing */
+}
+
+/* Add media query for responsiveness */
+@media screen and (max-width: 768px) {
+    .story-text {
+        font-size: 1.1em; /* Adjusted font size for smaller screens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .team {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .member {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .member img {
+        margin: 0; 
+        margin-bottom: 10px;
+    }
+}
+/* Add these styles to your existing CSS file */
+
+.project {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+.project:hover {
+    transform: none;
+}
+
+.project img {
+    width: 50%; /* Make sure the image takes the full width of its container */
+    border-radius: 5px 5px 0 0; /* Rounded corners only at the top */
+}
+
+.project-details {
+    padding: 20px;
+}
+
+.project-details h3 {
+    color: #1e90ff;
+    margin-bottom: 10px;
+}
+
+.project-description {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.project-key-features {
+    color: #1e90ff;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.project-features-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.project-features-list li {
+    color: #555;
+    margin-left: 20px;
+    position: relative;
+}
+
+.project-features-list li::before {
+    content: '\2022'; /* Use a bullet point (•) as a list item marker */
+    color: #1e90ff; /* Color of the bullet point */
+    font-size: 1.2em;
+    position: absolute;
+    left: -15px;
+}
+
+.presentation-link {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    text-decoration: none;
+    background-color: #1e90ff;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.presentation-link:hover {
+    background-color: #0066cc;
+}
